@@ -22,6 +22,12 @@
   color: #648dae;
 }
 
+@media (max-width: 600px) {
+  .menu {
+    display: none;
+  }
+}
+
 .footer {
   display: flex;
   flex: 1;
