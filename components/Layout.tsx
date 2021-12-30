@@ -26,7 +26,7 @@ export function Layout({ children }: Props) {
         </ul>
       </header>
 
-      <main className={styles.main}>{children}</main>
+      {children}
 
       <footer className={styles.footer}>
         <a
