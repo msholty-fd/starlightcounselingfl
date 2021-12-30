@@ -1,0 +1,16 @@
+.main {
+  display: flex;
+  margin: 50px;
+}
+
+.me {
+  height: 400px;
+  width: 400px;
+  object-fit: cover;
+  border-radius: 999px;
+}
+
+.header {
+  align-self: center;
+  margin-left: 100px;
+}
