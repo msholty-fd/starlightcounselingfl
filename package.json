@@ -1,19 +1,22 @@
 {
   "name": "starlightcounselingfl",
-  "version": "1.0.0",
-  "description": "",
-  "main": "src/index.ts",
+  "private": true,
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start",
+    "lint": "next lint"
   },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/msholty-fd/starlightcounselingfl.git"
+  "dependencies": {
+    "next": "12.0.7",
+    "react": "17.0.2",
+    "react-dom": "17.0.2"
   },
-  "author": "Michael Sholty",
-  "license": "MIT",
-  "bugs": {
-    "url": "https://github.com/msholty-fd/starlightcounselingfl/issues"
-  },
-  "homepage": "https://github.com/msholty-fd/starlightcounselingfl#readme"
+  "devDependencies": {
+    "@types/node": "17.0.5",
+    "@types/react": "17.0.38",
+    "eslint": "8.5.0",
+    "eslint-config-next": "12.0.7",
+    "typescript": "4.5.4"
+  }
 }
