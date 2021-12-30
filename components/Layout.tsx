@@ -1,4 +1,5 @@
 import Head from "next/head";
+import Link from "next/link";
 import styles from "../styles/Home.module.css";
 
 type Props = {
@@ -22,10 +23,10 @@ export function Layout({ children }: Props) {
         </span>
         <ul className={styles.menu}>
           <li>
-            <a href="/services">Services</a>
+            <Link href="/services">Services</Link>
           </li>
           <li>
-            <a href="/about">About Amanda</a>
+            <Link href="/about">About Amanda</Link>
           </li>
         </ul>
       </header>
