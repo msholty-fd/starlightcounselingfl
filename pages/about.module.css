@@ -3,6 +3,17 @@
   margin: 50px;
 }
 
+@media (max-width: 900px) {
+  .main {
+    flex-direction: column;
+  }
+}
+
+.meWrapper {
+  display: flex;
+  justify-content: center;
+}
+
 .me {
   height: 400px;
   width: 400px;
@@ -13,4 +24,10 @@
 .header {
   align-self: center;
   margin-left: 100px;
+}
+
+@media (max-width: 900px) {
+  .header {
+    margin: 0;
+  }
 }

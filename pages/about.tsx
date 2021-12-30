@@ -3,7 +3,7 @@ import styles from "./about.module.css";
 export default function About() {
   return (
     <main className={styles.main}>
-      <span>
+      <span className={styles.meWrapper}>
         <img
           src="http://starlightcounselingfl.com/me.jpeg"
           className={styles.me}
