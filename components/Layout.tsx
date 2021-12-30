@@ -1,5 +1,6 @@
 import Head from "next/head";
 import Link from "next/link";
+import { useState } from "react";
 import styles from "./Layout.module.css";
 
 type Props = {
@@ -7,6 +8,7 @@ type Props = {
 };
 
 export function Layout({ children }: Props) {
+  const [isMenuOpen, setIsMenuOpen] = useState(false);
   return (
     <div>
       <Head>
@@ -20,6 +22,18 @@ export function Layout({ children }: Props) {
         <span className={styles.headerText}>
           Starlight Counseling and Wellness
         </span>
+        <input
+          className={styles.menuToggle}
+          type="checkbox"
+          checked={isMenuOpen}
+        />
+        <label
+          className={styles.menuButtonContainer}
+          htmlFor="menu-toggle"
+          onClick={() => setIsMenuOpen((s) => !s)}
+        >
+          <div className={styles.menuButton}></div>
+        </label>
         <ul className={styles.menu}>
           <li>
             <Link href="/services">Services</Link>
